@@ -1,0 +1,818 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    align-self: auto;
+}
+.background{
+    height: 100vh;
+    width:100%;
+   background: linear-gradient(0deg, rgba(21, 15, 34, 0.9), rgba(5, 11, 41, 0.9)), url("1686088626830.jpg");
+     /*background-image: url("1686088626858.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    filter: grayscale(40%);
+    
+   
+}
+.form-container{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+}
+h1{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+form{
+    width: 700px;
+    height: 385px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 40px;
+    margin-left: 0px;
+    margin-top: 5px;
+}
+input{
+    margin: 4px;
+    padding: 7px;
+    
+}
+#fullname, #lastname{
+    width: 301px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 14px;
+    border: 1px solid rgb(109, 97, 97, 05);
+        
+}
+#email{
+    width: 613px;
+    border-radius: 14px;
+    border: 1px solid rgb(109, 97, 97, 05);
+        
+
+}
+#message{
+    width: 613px;
+    margin: 4px;
+    padding: 8px;
+    border-radius: 14px;
+    border: 1px solid rgb(109, 97, 97, 05);
+        
+}
+button{
+    width:613px;
+    height: 37px;
+    /*background-color: rgb(175, 80, 80);*/
+    background-color: coral;
+    border: none;
+    color: white;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 14px;
+}
+button:hover{
+    color: black;
+    cursor: pointer;
+}
+.icon{
+    width: 35px;
+    height: 35px;
+    background-color: coral;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 12px;
+    margin-left: 70px;
+    margin-right: 70px;
+    
+}
+.email, .contact{
+   text-align: center;
+   margin-bottom: 6px;
+}
+.fa-envelope{
+    width: 25px;
+    height: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.fa-phone-flip{
+    width: 25px;
+    height: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+p, h3{
+    color: white;
+    margin-bottom: 5px;
+}
+.flex{
+   
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 200px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+   
+}
+hr{
+    width: 45%;
+    margin-left: 450px;
+    border: 1px solid coral;
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+h2{
+    color: white;
+    margin-left: 390px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border: 2px solid;
+    border-color: transparent transparent transparent coral ;
+    padding-left: 15px;
+    font-size: 20px;
+
+    
+}
+.media-container{
+    display: flex;
+    align-content: start;
+    justify-content: start;
+}
+.social-medias{
+    color: white;
+    padding-left: 45px;
+    padding-top: 5px;
+}
+.flexsocial{
+    margin-left: 300px;
+    width: 280px;
+    height: 50px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 12px;
+    right:350px;
+    
+}
+/*responsiveness*/
+@media screen and (min-width:300px) and (max-width:350px){
+.background{
+    height: 105%;
+    padding-bottom: 35px;
+    }
+h1{
+    font-size: 17px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    line-height: 1;
+    letter-spacing: 1.5px;
+}
+form{
+    width: 280px;
+    height: 12%;
+    padding: 20px;
+    margin-left: 0px;
+    margin-top: 3px;
+}
+input{
+    margin: 5px;
+    padding: 7px;
+    height: 40px;
+}
+#fullname, #lastname{
+    width: 236px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid rgb(109, 97, 97, 05);
+}
+#email{
+    width: 236px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border: 1px solid rgb(109, 97, 97, 05);
+}
+#message{
+    width: 236px;
+    margin: 7px;
+    padding: 8px;
+    border: 1px solid rgb(109, 97, 97, 05);
+}
+button{
+    width:236px;
+    height: 37px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.icon{
+    margin-left: 140px;
+    margin-right: 140px;
+}
+.email, .contact{
+   margin-top: 50px;
+}
+.flex{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+   
+}
+hr{
+    width: 75%;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+h2{
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+
+
+    
+}
+.social-medias{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    
+    
+}
+.flexsocial{
+    margin-left: 100px;
+    width: 80px;
+    height: 30px;
+    background-color: transparent;
+    position: absolute;
+    bottom:30px;
+    right:50px;
+    padding-top: 10px;
+    padding-bottom: 45px;
+    
+}}
+@media screen and (min-width:360px) and (max-width:400px){
+    .background{
+        height: 100%;
+        padding-bottom: 34px;
+        }
+    h1{
+        font-size: 17px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        line-height: 1;
+        letter-spacing: 1.5px;
+    }
+    form{
+        width: 290px;
+        height: 433px;
+        padding: 23px;
+        margin-left: 0px;
+        margin-top: 4px;
+    }
+       /* transition: all ease-in-out 1s;
+    }
+    form:hover{
+       transform: translateY(10px) scale(1.2);
+    }*/
+    input{
+        margin: 7px;
+        padding: 7px;
+        height: 40px;
+    }
+    #fullname, #lastname{
+        width: 234px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border: 1px solid rgb(109, 97, 97, 05);
+        
+
+    }
+    #email{
+        width: 234px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 4px;
+        border: 1px solid rgb(109, 97, 97, 05);
+        
+    }
+    #message{
+        width: 235px;
+        margin-top: 5px;
+        margin-bottom: 4px;
+        margin-left: 5px;
+        padding: 8px;
+        border: 1px solid rgb(109, 97, 97, 05);
+        
+    }
+    button{
+        width:238px;
+        height: 37px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .icon{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .email, .contact{
+       margin-top: 50px;
+    }
+    .flex{
+        display: block;
+       
+    }
+    hr{
+        width: 75%;
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    
+h2{
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+
+
+    
+}
+.social-medias{
+    padding-left: 27px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+
+.flexsocial{
+    margin-left: 100px;
+    width: 199px;
+    height: 70px;
+    background-color: transparent;
+    position: absolute;
+    top: 840px;
+    right: 0px;
+    padding-top: 10px;
+    padding-bottom: 45px;
+        
+    }}
+    
+@media screen and (min-width:401px) and (max-width:576px){
+    .background{
+        height: 100%;
+        padding-bottom: 34px;
+        }
+    h1{
+        font-size: 17px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        line-height: 1;
+        letter-spacing: 1.5px;
+    }
+    form{
+        width: 291px;
+        height: 429px;
+        padding: 23px;
+        margin-left: 0px;
+        margin-top: 4px;
+    }
+    input{
+        margin: 7px;
+        padding: 7px;
+        height: 40px;
+    }
+    #fullname, #lastname{
+        width: 234px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border: 1px solid rgb(109, 97, 97, 05);
+        
+
+    }
+    #email{
+        width: 234px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 4px;
+        border: 1px solid rgb(109, 97, 97, 05);
+        
+    }
+    #message{
+        width: 235px;
+        margin-top: 5px;
+        margin-bottom: 4px;
+        margin-left: 5px;
+        padding: 8px;
+        border: 1px solid rgb(109, 97, 97, 05);
+        
+    }
+    button{
+        width:238px;
+        height: 37px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .icon{
+        margin-left: 182px;
+        margin-right: 90px;
+    }
+    .email, .contact{
+       margin-top: 50px;
+    }
+    .flex{
+        display: block;
+       
+    }
+    hr{
+        width: 75%;
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    
+h2{
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+
+
+    
+}
+.social-medias{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    
+    
+}
+.flexsocial{
+    margin-left: 100px;
+    width: 180px;
+    height: 70px;
+    background-color: transparent;
+    position: absolute;
+    top: 835px;
+    right:50px;
+    padding-top: 10px;
+    padding-bottom: 45px;
+        
+    }
+}
+      
+@media screen and (min-width:768px) and (max-width:799px){
+    .background{
+        height: 100vh;
+        padding-bottom: 0px;
+        }
+    h1{
+        font-size: 28px;
+        padding-top: 49px;
+        padding-bottom: 29px;
+        line-height: 1;
+        letter-spacing: 1.5px;
+    }
+    form{
+        width: 475px;
+        height: 468px;
+        padding: 40px;
+        margin-left: 0px;
+        margin-top: 7px;
+    }
+    input{
+        margin: 7px;
+        padding: 7px;
+        height: 40px;
+    }
+    #fullname, #lastname{
+        width: 394px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border: 1px solid rgb(109, 97, 97, 05);
+        
+
+    }
+    #email{
+        width: 394px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 4px;
+        border: 1px solid rgb(109, 97, 97, 05);
+        
+    }
+    #message{
+        width: 395px;
+        margin-top: 5px;
+        margin-bottom: 4px;
+        margin-left: 5px;
+        padding: 8px;
+        border: 1px solid rgb(109, 97, 97, 05);
+        
+    }
+    button{
+        width:398px;
+        height: 37px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .icon{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .email, .contact{
+       margin-top: 30px;
+    }
+    .flex{
+        display: flex;
+        gap: 180px;
+       
+    }
+    hr{
+        width: 65%;
+        margin-left: 140px;
+        margin-top: 50px;
+    }
+h3, p {
+    font-size: 22px;
+}
+    
+h2{
+    margin-left: 120px;
+    margin-bottom: 0px;
+    font-size: 22px;
+    padding-left: 15px;
+    padding-bottom: 1px;
+
+
+    
+}
+.social-medias{
+    padding-left: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+.fa-facebook{
+    width: 28px;
+    height: 28px;
+}
+.fa-instagram{
+    width: 28px;
+    height: 28px;
+}
+.fa-linkedin{
+    width: 28px;
+    height: 28px;
+}
+
+.fa-twitter{
+    width: 28px;
+    height: 28px;
+}
+.flexsocial{
+    margin-left: 110px;
+    background-color: transparent;
+    top: 845px;
+    right:110px;
+    padding-top: 12px;
+    padding-bottom: 0px;
+        
+    }}
+     
+    @media screen and (min-width:800px) and (max-width:1100px) {
+        .background{
+            height: 100vh;
+            padding-bottom: 0px;
+            }
+        h1{
+            font-size: 32px;
+            padding-top: 59px;
+            padding-bottom: 49px;
+            line-height: 1;
+            letter-spacing: 1.5px;
+        }
+        form{
+            width: 483px;
+            height: 471px;
+            padding: 40px;
+            margin-left: 0px;
+            margin-top: 15px;
+        }
+        input{
+            margin: 8px;
+            padding: 7px;
+            height: 40px;
+        }
+        #fullname, #lastname{
+            width: 394px;
+            margin-left: 5px;
+            margin-right: 5px;
+            border: 1px solid rgb(109, 97, 97, 05);
+            
+    
+        }
+        #email{
+            width: 394px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 5px;
+            border: 1px solid rgb(109, 97, 97, 05);
+            
+        }
+        #message{
+            width: 395px;
+            margin-top: 5px;
+            margin-bottom: 4px;
+            margin-left: 5px;
+            padding: 8px;
+            border: 1px solid rgb(109, 97, 97, 05);
+            
+        }
+        button{
+            width:398px;
+            height: 37px;
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+        .icon{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .email, .contact{
+           margin-top: 59px;
+        }
+        .flex{
+            display: flex;
+            gap: 180px;
+           
+        }
+        hr{
+            width: 65%;
+            margin-left: 140px;
+            margin-top: 50px;
+        }
+    h3, p {
+        font-size: 22px;
+    }
+        
+    h2{
+        margin-left: 120px;
+        margin-bottom: 0px;
+        font-size: 23px;
+        padding-left: 15px;
+        padding-bottom: 1px;
+        padding-top: 9px;   
+    }
+    .social-medias{
+        padding-left: 30px;
+        padding-bottom: 10px;
+        margin-bottom: 50px;
+    }
+    .fa-facebook{
+        width: 28px;
+        height: 28px;
+    }
+    .fa-instagram{
+        width: 28px;
+        height: 28px;
+    }
+    .fa-linkedin{
+        width: 28px;
+        height: 28px;
+    }
+    
+    .fa-twitter{
+        width: 28px;
+        height: 28px;
+    }
+    .flex{
+        margin-top: 3px;
+    }
+    .flexsocial{
+        margin-left: 110px;
+        background-color: transparent;
+        right:110px;
+        padding-top: 12px;
+        padding-bottom: 0px;
+        top: 880px;
+        position: absolute ;
+            
+        }}
+    
+@media screen and (min-width:1110px) and (max-width:1500px){
+    .background{ padding-bottom: 0vh;
+        height: auto;
+         }
+form{
+    width: 700px;
+    height: 405px;
+    margin-left: 0px;
+    transition: all ease-in-out 1s;
+   
+}
+#message{
+    border: 1px solid rgb(109, 97, 97, 05);
+    margin-bottom: 6px;
+        
+}
+input{
+    margin: 4px;
+    padding: 7px;
+}
+#fullname, #lastname{
+    width: 300px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 6px;
+    height: 40px;
+    border: 1px solid rgb(109, 97, 97, 05);
+        
+}
+#email{
+    margin-bottom: 6px;
+    height: 40px;
+    border: 1px solid rgb(109, 97, 97, 05);
+        
+
+}
+.icon{
+    width: 35px;
+    height: 35px;
+    background-color: coral;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.email, .contact{
+   text-align: center;
+}
+
+hr{
+    width: 45%;
+    margin-left: 340px;
+    border: 1px solid coral;
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+h2{
+    margin-left: 290px;
+    margin-top: 10px;
+    padding-left: 18px;
+    padding-bottom: 5px;
+    margin-bottom: 105px;
+    font-size: 18px;   
+}
+
+.fa-facebook{
+    width: 28px;
+    height: 28px;
+}
+.fa-instagram{
+    width: 28px;
+    height: 28px;
+}
+.fa-linkedin{
+    width: 28px;
+    height: 28px;
+}
+
+.fa-twitter{
+    width: 28px;
+    height: 28px;
+}
+.social-medias{
+    color: white;
+    padding-left: 45px;
+    padding-top: 5px;
+    
+    
+}
+.flexsocial{
+    margin-left: 0px;
+    width: 360px;
+    height: 150px;
+    background-color: transparent;
+    position: absolute;
+    top: 711px;
+    left: 600px;
+    
+}}
