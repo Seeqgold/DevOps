@@ -1,3 +1,3 @@
 FROM nginx:alpine
-COPY --chown=node:node ../
+COPY --chown=node:node ..\
 EXPOSE 80
