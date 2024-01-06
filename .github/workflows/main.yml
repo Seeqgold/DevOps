@@ -40,7 +40,7 @@ jobs:
           cred: ${{ secrets.AZURE_CREDENTIALS}}
 
         -name: Terraform Init
-        uses: terraform init
+        uses: terraform init main.tf
 
         -name: Terraform Plan
         uses: terraform plan       
