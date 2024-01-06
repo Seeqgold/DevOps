@@ -36,18 +36,4 @@ jobs:
       - name: Terraform Apply
         run: terraform apply -auto-approve
 
-      - name: Get Kubernetes Config
-        run: echo "${{ steps.apply.outputs.kube_config }}" >> $GITHUB_WORKSPACE/kubeconfig
-
-      - name: Set up kubectl
-        uses: azure/setup-kubectl@v1
-        with:
-          version: 'latest'
-
-      - name: Configure kubectl
-        run: |
-          mkdir -p $HOME/.kube
-          mv $GITHUB_WORKSPACE/kubeconfig $HOME/.kube/config
-
-      - name: Verify AKS Cluster
-        run: kubectl get nodes
+     
