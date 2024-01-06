@@ -22,20 +22,13 @@ jobs:
         docker build ./first-application --file ./first-application/Dockerfile --tag seeqgold/app1:v1
         docker push seeqgold/app1:v1
 
-         - name: Deploy App2
-        run: |
-          kubectl apply -f ./second-application/deployment.yaml
-
 
     - name: Build and Push Docker Image for App2
       run: |
         docker build ./second-application --file ./second-application/Dockerfile --tag seeqgold/app2:v2
         docker push seeqgold/app2:v2
 
-         - name: Deploy App2
-        run: |
-          kubectl apply -f ./second-application/deployment.yaml
-
+        
         -name: Set up Terraform
         uses: hashicorp/setup-terraform@v1
         with:
