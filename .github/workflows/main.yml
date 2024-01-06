@@ -36,5 +36,31 @@ jobs:
         run: |
           kubectl apply -f ./second-application/deployment.yaml
 
+        -name: Set up Terraform
+        uses: hashicorp/setup-terraform@v1
+        with:
+          terraform_version: 0.14.7
+    
+        -name: Azure Login
+        uses: azure/login@v1
+        with: 
+          cred: ${{ secrets.AZURE_CREDENTIALS}}
 
+        -name: Terraform Init
+        uses: terraform init
+
+        -name: Terraform Plan
+        uses: terraform plan       
+
+         -name: Terraform Apply
+        uses: terraform apply -auto-approve 
+
+         -name: Terraform Output
+        uses: terraform outputs  
+
+         -name: Azure Logout
+        uses:  azure/logout@v1   
+       
+       
+       
     
