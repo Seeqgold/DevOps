@@ -8,21 +8,26 @@ on:
 
 jobs:
   build_and_deploy:
+
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
+    - uses: actions/checkout@v3
+    
+    - name: Docker Hub Login
+      run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
 
-      - name: Docker Hub Login
-        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+    - name: Build and Push Docker Image for App1
+      run: |
+        docker build ./first-application --file ./first-application/Dockerfile --tag seeqgold/app1:v1
+        docker push seeqgold/app1:v1
 
-      - name: Build and push the Docker image for App1
-        run: |
-          docker build ./first-application --file ./first-application/Dockerfile --tag seeqgold/app1:v1
-          docker push seeqgold/app1:v1
+    - name: Build and Push Docker Image for App2
+      run: |
+        docker build ./second-application --file ./second-application/Dockerfile --tag seeqgold/app2:v1
+        docker push seeqgold/app2:v1
 
-      - name: Build and push the Docker image for App2
-        run: |
-          docker build ./second-application --file ./second-application/Dockerfile --tag seeqgold/app2:v2
-          docker push seeqgold/app2:v2
-
-     
+    - name: Deploy to AKS
+      run: |
+        kubectl apply -f ./first-application/deployment.yaml
+        kubectl apply -f ./second-application/deployment.yaml
