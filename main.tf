@@ -19,15 +19,4 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" { 
         vm_size         = "Standard_DS2_v2"    
         os_disk_size_gb = 30  
     }
-    service_principal {
-        client_id     = "my-service-principal-client-id"    
-        client_secret = "my-service-principal-client-secret" 
-    }
-    tags = {
-        environment = "dev"  
-    }
-    role_based_access_control_enabled = true
-}
-output "kube_config" {  
-    value = azurerm_kubernetes_cluster.aks_cluster.kube_config_raw
-}
+    
