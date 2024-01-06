@@ -24,8 +24,8 @@ jobs:
 
     - name: Build and Push Docker Image for App2
       run: |
-        docker build ./second-application --file ./second-application/Dockerfile --tag seeqgold/app2:v1
-        docker push seeqgold/app2:v1
+        docker build ./second-application --file ./second-application/Dockerfile --tag seeqgold/app2:v2
+        docker push seeqgold/app2:v2
 
     - name: Deploy to AKS
       run: |
