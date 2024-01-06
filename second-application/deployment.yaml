@@ -27,6 +27,6 @@ spec:
     app: app2
   ports:
     - protocol: TCP
-      port: 30002
+      port: 80
       targetPort: 5000
-  type: Nodeport
+  type: LoadBalancer
